@@ -55,3 +55,8 @@ body {
     font-size:50px;
     font-family:Courier New;
 }
+#facepic {
+    margin-left: 450px;
+    margin-right: auto;
+    width:150x;
+}
