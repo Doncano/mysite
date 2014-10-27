@@ -132,7 +132,7 @@ if (isset($_POST['access_password'])) {
   if (!USE_USERNAME && !in_array($pass, $LOGIN_INFORMATION)
   || (USE_USERNAME && ( !array_key_exists($login, $LOGIN_INFORMATION) || $LOGIN_INFORMATION[$login] != $pass ) ) 
   ) {
-    showLoginPasswordProtect("Incorrect password.");
+    showLoginPasswordProtect("Incorrect password, this failed attempt has been sent to the administrator.");
   }
   else {
     // set cookie if password was validated
