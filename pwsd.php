@@ -50,8 +50,8 @@ $LOGIN_INFORMATION = array(
 // NOTE: all rows except last must have comma "," at the end of line
 $LOGIN_INFORMATION = array(
   'zubrag' => 'root',
-  'admin' => 'adminpass'
-    'Doncano' => 'sensei'
+  'admin' => 'adminpass',
+  'Doncano' => 'sensei'
 );
 
 // request login? true - show login and password boxes, false - password box only
@@ -109,7 +109,7 @@ function showLoginPasswordProtect($error_msg) {
   <div style="width:500px; margin-left:auto; margin-right:auto; text-align:center">
   <form method="post">
     <h3>This is a password protected page, please leave if you are not an authrized member</h3>
-    <font color="red"><?php echo $error_msg; ?></font><br />
+    <font color="red"><?php echo('Hello'); ?></font><br />
 <?php if (USE_USERNAME) echo 'Login:<br /><input type="input" name="access_login" /><br />Password:<br />'; ?>
     <input type="password" name="access_password" /><p></p><input type="submit" name="Submit" value="Submit" />
   </form>
